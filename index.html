@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-R">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrousels</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/simple-01/simple-01.css" />
+    <link rel="stylesheet" href="/simple-02/simple-02.css" />
+    <link rel="stylesheet" href="/simple-03/simple-03.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <button
+            id="btn-nav-simp-01"
+            class="btn-nav"
+            onclick="navDisplay('simp-01')"
+          >
+            Simple 1
+          </button>
+        </li>
+        <li>
+          <button
+            id="btn-nav-simp-02"
+            class="btn-nav"
+            onclick="navDisplay('simp-02')"
+          >
+            Simple 2
+          </button>
+        </li>
+        <li>
+          <button
+            id="btn-nav-simp-03"
+            class="btn-nav"
+            onclick="navDisplay('simp-03')"
+          >
+            Simple 3
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- Simple 01 - start -->
+    <div id="simp-01" class="content">
+      <button id="prev" class="btn"><</button>
+      <div class="wrapper">
+        <div class="card" style="background-color: rgb(233, 150, 95)">1</div>
+        <div class="card" style="background-color: rgb(233, 95, 176)">2</div>
+        <div class="card" style="background-color: rgb(95, 166, 233)">3</div>
+        <div class="card" style="background-color: rgb(233, 231, 95)">4</div>
+        <div class="card" style="background-color: rgb(95, 233, 118)">5</div>
+        <div class="card" style="background-color: rgb(132, 95, 233)">6</div>
+        <div class="card" style="background-color: rgb(233, 95, 95)">7</div>
+      </div>
+      <button id="next" class="btn">></button>
+    </div>
+
+    <!-- Simple 01 - end -->
+
+    <!-- Simple 02 - start -->
+    <div id="simp-02" class="content">
+      <div class="wrapper">
+        <div class="card" style="background-color: rgb(233, 150, 95)">1</div>
+        <div class="card" style="background-color: rgb(233, 95, 176)">2</div>
+        <div class="card" style="background-color: rgb(95, 166, 233)">3</div>
+        <div class="card" style="background-color: rgb(233, 231, 95)">4</div>
+        <div class="card" style="background-color: rgb(95, 233, 118)">5</div>
+        <div class="card" style="background-color: rgb(132, 95, 233)">6</div>
+        <div class="card" style="background-color: rgb(233, 95, 95)">7</div>
+      </div>
+      <div id="selector"></div>
+    </div>
+
+    <!-- Simple 02 - end -->
+
+
+    <!-- Simple 03 - start -->
+    <div id="simp-03" class="content">
+      <div class="wrapper">
+        <div class="card" style="background-color: rgb(233, 150, 95)">1</div>
+        <div class="card" style="background-color: rgb(233, 95, 176)">2</div>
+        <div class="card" style="background-color: rgb(95, 166, 233)">3</div>
+        <div class="card" style="background-color: rgb(233, 231, 95)">4</div>
+        <div class="card" style="background-color: rgb(95, 233, 118)">5</div>
+        <div class="card" style="background-color: rgb(132, 95, 233)">6</div>
+        <div class="card" style="background-color: rgb(233, 95, 95)">7</div>
+      </div>
+      <!-- <div id="selector"></div> -->
+    </div>
+
+    <!-- Simple 03 - end -->
+    <script src="main.js"></script>
+    <script src="/simple-01/simple-01.js"></script>
+    <script src="/simple-02/simple-02.js"></script>
+    <script src="/simple-03/simple-03.js"></script>
+  </body>
+</html>

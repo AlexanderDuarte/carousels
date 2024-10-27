@@ -1,0 +1,48 @@
+#simp-01 {
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 20px;
+}
+
+#simp-01 .wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: calc(100% * 7);
+}
+
+#simp-01 .btn {
+    cursor: pointer;
+    background-color: white;
+    padding: 0 15px;
+    font-size: 22px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 1;
+}
+
+#simp-01 #prev {
+    left: 0;
+}
+
+#simp-01 #next {
+    right: 0;
+}
+
+#simp-01 .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    color: white;
+    font-weight: bold;
+}

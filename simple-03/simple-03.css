@@ -1,0 +1,69 @@
+#simp-03{
+    overflow: hidden;
+    max-width: 400px;
+    height: 400px;
+    position: relative;
+    
+    border-radius: 20px;
+}
+
+
+#simp-03 .wrapper{
+    width: calc(100% * 7);
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+#simp-03 .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+}
+
+#simp-03 #selector{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    
+    gap: 8px;
+
+}
+
+#simp-03 .btn{
+    width: 20px;
+    aspect-ratio:  1 / 1;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#simp-03 .btn:hover::before{
+    content: "";
+    width: 60%;
+    height: 60%;
+    background-color: black;
+    border-radius: 100%;
+}
+
+#simp-03 .active::before{
+    background-color: cornflowerblue;
+    content: "";
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+}
